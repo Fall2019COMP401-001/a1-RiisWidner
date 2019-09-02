@@ -46,7 +46,7 @@ public class A1Jedi {
 			} else {
 			System.out.println(customerCount[i] + " customers bought " + itemCount[i] + " " + items[i]);
 			}
-		// Your code follows here.
+		// Your code follows here
 		}
 	}
 }
