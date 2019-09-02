@@ -27,7 +27,7 @@ public class A1Novice {
 		System.out.println(fName.charAt(0) + "." + lName + ": " + String.format("%.2f", sum));
 		}
 
-		// Your code follows here
+		// Your code follows her
 		
 	}
 }

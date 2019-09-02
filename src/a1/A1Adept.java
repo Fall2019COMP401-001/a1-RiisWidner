@@ -62,7 +62,7 @@ public class A1Adept {
 		
 		System.out.println("Average: " + String.format("%.2f", average(amount)));
 
-		// Your code follows heres
+		// Your code follows here
 		
 	}
 	public static double max (double[] amount) {
