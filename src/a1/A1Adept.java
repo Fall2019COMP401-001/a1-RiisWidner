@@ -50,13 +50,13 @@ public class A1Adept {
 		
 		for (int i = 0; i < amount.length; i++) {
 			if (max(amount) == amount[i]) {
-				System.out.println("Biggest: " + people[i] + " (" + max(amount) + ")"); 
+				System.out.println("Biggest: " + people[i] + " (" + String.format("%.2f",max(amount)) + ")"); 
 			}
 		}
 		
 		for (int i = 0; i < amount.length; i++) {
 			if (min(amount) == amount[i]) {
-				System.out.println("Smallest: " + people[i] + " (" + amount[i] + ")"); 
+				System.out.println("Smallest: " + people[i] + " (" + String.format("%.2f", amount[i]) + ")"); 
 			}
 		}
 		

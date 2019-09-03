@@ -1,5 +1,6 @@
 package a1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class A1Jedi {
@@ -27,19 +28,24 @@ public class A1Jedi {
 			String fName = scan.next();
 			String lName = scan.next();
 			int shop = scan.nextInt();
+			Boolean[] increased = new Boolean[store];
+				Arrays.fill(increased, false);
 			for (int j = 0; j < shop; j++) {
 				int iCount = scan.nextInt();
 				String iName = scan.next();
+				
 				for (int k = 0; k < store; k++) {
 					int state = (iName.compareTo(items[k]));
 					if (state == 0) {
-						customerCount[k]++;
 						itemCount[k] += iCount;
+						if (!increased[k]) {
+								customerCount[k]++;
+								increased[k] = true;
+						}
 					}
 				}
 			}
 		}
-		
 		for (int i = 0; i < store; i++) {
 			if (customerCount[i] == 0) {
 				System.out.println("No customers bought " + items[i]);
@@ -48,5 +54,5 @@ public class A1Jedi {
 			}
 		// Your code follows her
 		}
-	}
+}
 }
